@@ -13,6 +13,7 @@ pipeline {
                 sh 'wget https://vh.venafidemo.com/csc/clients/venafi-csc-latest-x86_64.deb'
                 sh 'dpkg -i venafi-csc-latest-x86_64.deb'
             }
+        }
         stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
