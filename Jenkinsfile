@@ -12,6 +12,7 @@ pipeline {
                        apt-get update
                        apt-get install --no-install-recommends -y wget ca-certificates
                        wget https://vh.venafidemo.com/csc/clients/venafi-csc-latest-x86_64.deb
+                       wget https://vh.venafidemo.com/poc_guide/venafipkcs11.txt
                        dpkg -i venafi-csc-latest-x86_64.deb
                    '''
             }
