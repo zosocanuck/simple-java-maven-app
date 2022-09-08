@@ -9,10 +9,10 @@ pipeline {
         stage('Venafi') {
             steps {
                 sh '''#!/bin/bash
-                       sudo apt-get update
-                       sudo apt-get install --no-install-recommends -y wget ca-certificates
-                       sudo wget https://vh.venafidemo.com/csc/clients/venafi-csc-latest-x86_64.deb
-                       sudo dpkg -i venafi-csc-latest-x86_64.deb
+                       apt-get update
+                       apt-get install --no-install-recommends -y wget ca-certificates
+                       wget https://vh.venafidemo.com/csc/clients/venafi-csc-latest-x86_64.deb
+                       dpkg -i venafi-csc-latest-x86_64.deb
                    '''
             }
         }
