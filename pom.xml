@@ -87,8 +87,8 @@
           <alias>vsign-rsa2048-cert</alias>
           <storetype>PKCS11</storetype>
           <storepass>none</storepass>
-          <providerclass>sun.security.pkcs11.SunPKCS11</providerclass>
-          <providerarg>/root/venafipkcs11.txt</providerarg>
+          <providerClass>sun.security.pkcs11.SunPKCS11</providerClass>
+          <providerArg>/root/venafipkcs11.txt</providerArg>
         </configuration>  
       </plugin>
     </plugins>
